@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог товаров</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Главная — Зерно&Жар</title>
+<meta name="description" content="Свежая обжарка кофе и оборудование для заваривания.">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
-    <h1>Учебный интернет-магазин</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Главная страница проекта</h2>
-      <p>
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем здесь будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
-      </p>
-    </section>
-    <section>
-      <h2>О проекте</h2>
-      <p>
-        В рамках данного проекта будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг. Проект будет постепенно
-        расширяться на следующих практических занятиях.
-      </p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2026 Учебный проект</p>
-  </footer>
+<body id="top">
+<a class="skip-link" href="#main">К содержимому</a>
+<header class="site-header"><div class="site-header-inner"><a class="site-header-logo" href="index.html">Зерно&amp;Жар</a><nav class="site-nav" aria-label="Основное меню"><ul class="site-nav-list"><li class="site-nav-item"><a class="site-nav-link site-nav-link-active" href="index.html" aria-current="page">Главная</a></li><li class="site-nav-item"><a class="site-nav-link" href="catalog.html">Каталог</a></li><li class="site-nav-item"><a class="site-nav-link" href="product.html">Товар</a></li><li class="site-nav-item"><a class="site-nav-link" href="order.html">Заявка</a></li><li class="site-nav-item"><a class="site-nav-link" href="contacts.html">Контакты</a></li></ul></nav><button class="button button-small site-header-cta" type="button" data-modal-open="quick-order">Быстрая заявка</button></div></header>
+<main id="main">
+<section class="hero"><div class="hero-text"><h1 class="hero-title">Кофе, который обжарен на этой неделе</h1><p class="hero-lead">Свежая обжарка из Эфиопии, Колумбии и Кении, а ещё оборудование для дома и офиса.</p><div class="hero-actions"><a class="button" href="catalog.html">Открыть каталог</a><a class="button button-ghost" href="order.html">Оставить заявку</a></div></div><img class="hero-image" src="images/hero.svg" alt="Чашка кофе, вид сверху" width="600" height="420"></section>
+<section class="section" id="advantages"><h2 class="section-title">Почему к нам возвращаются</h2><ul class="advantages">
+<li class="advantages-item"><h3>Обжарка под заказ</h3><p>Зерно обжаривается в день отправки.</p></li>
+<li class="advantages-item"><h3>Доставка за 1–2 дня</h3><p>Курьером или в пункт выдачи.</p></li>
+<li class="advantages-item"><h3>Помощь с выбором</h3><p>Подскажем помол и способ заваривания.</p></li>
+<li class="advantages-item"><h3>Возврат 14 дней</h3><p>На оборудование в целой упаковке.</p></li></ul></section>
+<div class="home-layout"><section class="section home-layout-main" id="popular"><h2 class="section-title">Популярные товары</h2><div class="catalog-grid"><article class="product-card"><span class="product-card-badge product-card-badge-hit">Хит</span><img class="product-card-image" src="images/product-1.svg" alt="Эфиопия Иргачеффе" width="400" height="300" loading="lazy"><div class="product-card-body"><h3 class="product-card-title">Эфиопия Иргачеффе</h3><p class="product-card-description">Цветочный, с нотами бергамота. Светлая обжарка, 250 г.</p><p class="product-card-price">1 190 ₽</p><div class="product-card-actions"><a class="button button-ghost product-card-button" href="product.html">Подробнее</a><button class="button product-card-button" type="button" data-modal-open="quick-order" data-product="Эфиопия Иргачеффе">Заказать</button></div></div></article><article class="product-card"><span class="product-card-badge product-card-badge-new">Новинка</span><img class="product-card-image" src="images/product-3.svg" alt="Кения АА" width="400" height="300" loading="lazy"><div class="product-card-body"><h3 class="product-card-title">Кения АА</h3><p class="product-card-description">Чёрная смородина, яркая кислотность. 250 г.</p><p class="product-card-price">1 350 ₽</p><div class="product-card-actions"><a class="button button-ghost product-card-button" href="product.html">Подробнее</a><button class="button product-card-button" type="button" data-modal-open="quick-order" data-product="Кения АА">Заказать</button></div></div></article><article class="product-card product-card-discount"><span class="product-card-badge product-card-badge-discount">Скидка −15%</span><img class="product-card-image" src="images/product-4.svg" alt="Кофемашина Brewo One" width="400" height="300" loading="lazy"><div class="product-card-body"><h3 class="product-card-title">Кофемашина Brewo One</h3><p class="product-card-description">Рожковая, 15 бар, паровой капучинатор.</p><p class="product-card-price">24 900 ₽</p><div class="product-card-actions"><a class="button button-ghost product-card-button" href="product.html">Подробнее</a><button class="button product-card-button" type="button" data-modal-open="quick-order" data-product="Кофемашина Brewo One">Заказать</button></div></div></article></div><p class="section-more"><a href="catalog.html">Весь каталог</a> · <a href="contacts.html">Контакты</a></p></section>
+<aside class="info-aside home-layout-aside" aria-label="Полезная информация"><h2 class="info-aside-title">Нужна помощь?</h2><p>Подскажем сорт и помол под вашу кофемашину.</p><p><a href="contacts.html">Написать нам</a></p><p class="info-aside-note">Доставка от 3 000 ₽ — бесплатно.</p></aside></div>
+</main>
+<footer class="site-footer" id="contacts"><div class="site-footer-inner">
+<div><p class="site-footer-title">Зерно&amp;Жар</p><p>Обжарка и оборудование для кофе</p><p>г. Нюрнберг, Beispielstr. 12 · +49 911 000-00-00 · hello@zernozhar.example</p></div>
+<ul class="site-footer-links"><li><a href="index.html#advantages">Преимущества</a></li><li><a href="index.html#popular">Популярные товары</a></li><li><a href="catalog.html#filters">Фильтры каталога</a></li><li><a href="product.html#specs">Характеристики</a></li></ul>
+</div><p class="site-footer-copy">© 2026 Учебный проект КР №1</p></footer>
+<p class="success-message" id="success-message" role="status" hidden>Форма успешно отправлена!</p>
+<a class="to-top" href="#top" aria-label="Наверх">↑</a>
+<dialog class="modal" id="quick-order" aria-labelledby="modal-title"><div class="modal-box"><button class="modal-close" type="button" data-modal-close aria-label="Закрыть окно">×</button><h2 class="modal-title" id="modal-title">Быстрая заявка</h2><p>Оставьте контакты — свяжемся в течение рабочего дня.</p><form class="form modal-form" action="#" method="post">
+<input type="hidden" id="modal-selected-product" name="selected-product">
+<div class="form-grid">
+<div class="form-field"><label class="form-label" for="modal-name">Имя *</label><input class="form-input" type="text" id="modal-name" name="name" required minlength="2" autocomplete="name"></div>
+<div class="form-field"><label class="form-label" for="modal-email">E-mail *</label><input class="form-input" type="email" id="modal-email" name="email" required autocomplete="email" placeholder="you@example.com"></div>
+<div class="form-field"><label class="form-label" for="modal-phone">Телефон *</label><input class="form-input" type="tel" id="modal-phone" name="phone" required autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" title="Формат: +7 (900) 000-00-00"></div>
+<div class="form-field"><label class="form-label" for="modal-date">Желаемая дата</label><input class="form-input" type="date" id="modal-date" name="date" ></div>
+<div class="form-field"><label class="form-label" for="modal-topic">Тема заявки / товар *</label><select class="form-input" id="modal-topic" name="topic" required><option value="">Выберите…</option><option>Эфиопия Иргачеффе</option><option>Колумбия Супремо</option><option>Кения АА</option><option>Кофемашина Brewo One</option><option>Воронка V60 керамика</option><option>Ручная кофемолка Hario</option><option>Другой вопрос</option></select></div>
+</div>
+<div class="form-field"><label class="form-label" for="modal-comment">Комментарий</label><textarea class="form-input" id="modal-comment" name="comment" rows="4"></textarea></div>
+<div class="form-check"><input type="checkbox" id="modal-agree" name="agree" required><label for="modal-agree">Согласен на обработку персональных данных *</label></div>
+<div class="form-actions"><button class="button" type="submit">Отправить заявку</button><button class="button button-ghost" type="reset">Очистить</button></div>
+</form></div></dialog>
+<script src="js/main.js"></script>
 </body>
 </html>
