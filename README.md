@@ -36,3 +36,6 @@ GitHub Pages: https://dsargsan6-art.github.io/kr1-html-css-shop/
 
 ## CSS-архитектура
 Стили разделены на блоки: переменные (`:root`), база, шапка, навигация, кнопки, карточки, формы, таблица, модальное окно, подвал. В `:root` вынесены цвета, отступы, скругления, шрифты. Состояния: `:hover`, `:focus-visible`, `:disabled`, подсветка ошибочных полей формы.
+
+## Страницы и навигация
+Страницы: `index.html`, `catalog.html`, `contacts.html`, а также `product.html` и `order.html`. Единое меню на всех страницах. Якорные ссылки: `index.html#advantages`, `index.html#popular`, `#contacts` (подвал). На внутренних страницах есть хлебные крошки, у каждой страницы свои `title` и `meta description`.
