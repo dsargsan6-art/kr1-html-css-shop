@@ -1,15 +1,15 @@
-# Pull Request — практика №4
+# Pull Request — практика №5
 
-**Ветка:** `feature/css-architecture-states`
+**Ветка:** `feature/multi-page-navigation`
 
-**Коммит:** `refactor: organize CSS variables and states`
+**Коммит:** `feat: add multi-page structure navigation and anchors`
 
-**Заголовок PR:** Organize CSS variables and interface states
+**Заголовок PR:** Add multi-page structure navigation and anchors
 
 **Описание PR:**
 
 ## Что сделано
-- Добавлены CSS-переменные в :root.
-- Цвета, отступы и скругления вынесены в переменные.
-- Упорядочена структура файла css/style.css.
-- Добавлены состояния :hover, :focus-visible, :disabled.
+- Добавлены страницы catalog.html, contacts.html, product.html, order.html.
+- Единая навигация на всех страницах.
+- Добавлены якорные ссылки и хлебные крошки.
+- У страниц уникальные title и meta description.
