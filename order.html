@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Заявка — Зерно&Жар</title>
+<meta name="description" content="Форма оформления заявки.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">К содержимому</a>
+<header class="site-header"><div class="site-header-inner"><a class="site-header-logo" href="index.html">Зерно&amp;Жар</a><nav class="site-nav" aria-label="Основное меню"><ul class="site-nav-list"><li class="site-nav-item"><a class="site-nav-link" href="index.html">Главная</a></li><li class="site-nav-item"><a class="site-nav-link" href="catalog.html">Каталог</a></li><li class="site-nav-item"><a class="site-nav-link" href="product.html">Товар</a></li><li class="site-nav-item"><a class="site-nav-link site-nav-link-active" href="order.html" aria-current="page">Заявка</a></li><li class="site-nav-item"><a class="site-nav-link" href="contacts.html">Контакты</a></li></ul></nav><button class="button button-small site-header-cta" type="button" data-modal-open="quick-order">Быстрая заявка</button></div></header>
+<main id="main">
+<nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a> / <a href="catalog.html">Каталог</a> / <span>Заявка</span></nav><h1 class="page-title">Оформление заявки</h1><p class="page-lead">Поля со звёздочкой обязательны. Менеджер свяжется с вами в течение рабочего дня.</p><form class="form order-form" action="#" method="post">
+<input type="hidden" id="order-selected-product" name="selected-product">
+<div class="form-grid">
+<div class="form-field"><label class="form-label" for="order-name">Имя *</label><input class="form-input" type="text" id="order-name" name="name" required minlength="2" autocomplete="name"></div>
+<div class="form-field"><label class="form-label" for="order-email">E-mail *</label><input class="form-input" type="email" id="order-email" name="email" required autocomplete="email" placeholder="you@example.com"></div>
+<div class="form-field"><label class="form-label" for="order-phone">Телефон *</label><input class="form-input" type="tel" id="order-phone" name="phone" required autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" title="Формат: +7 (900) 000-00-00"></div>
+<div class="form-field"><label class="form-label" for="order-date">Желаемая дата</label><input class="form-input" type="date" id="order-date" name="date" ></div>
+<div class="form-field"><label class="form-label" for="order-topic">Тема заявки / товар *</label><select class="form-input" id="order-topic" name="topic" required><option value="">Выберите…</option><option>Эфиопия Иргачеффе</option><option>Колумбия Супремо</option><option>Кения АА</option><option>Кофемашина Brewo One</option><option>Воронка V60 керамика</option><option>Ручная кофемолка Hario</option><option>Другой вопрос</option></select></div>
+</div>
+<div class="form-field"><label class="form-label" for="order-comment">Комментарий</label><textarea class="form-input" id="order-comment" name="comment" rows="4"></textarea></div>
+<div class="form-check"><input type="checkbox" id="order-agree" name="agree" required><label for="order-agree">Согласен на обработку персональных данных *</label></div>
+<div class="form-actions"><button class="button" type="submit">Отправить заявку</button><button class="button button-ghost" type="reset">Очистить</button></div>
+</form>
+</main>
+<footer class="site-footer" id="contacts"><div class="site-footer-inner">
+<div><p class="site-footer-title">Зерно&amp;Жар</p><p>Обжарка и оборудование для кофе</p><p>г. Нюрнберг, Beispielstr. 12 · +49 911 000-00-00 · hello@zernozhar.example</p></div>
+<ul class="site-footer-links"><li><a href="index.html#advantages">Преимущества</a></li><li><a href="index.html#popular">Популярные товары</a></li><li><a href="catalog.html#filters">Фильтры каталога</a></li><li><a href="product.html#specs">Характеристики</a></li></ul>
+</div><p class="site-footer-copy">© 2026 Учебный проект КР №1</p></footer>
+<p class="success-message" id="success-message" role="status" hidden>Форма успешно отправлена!</p>
+<a class="to-top" href="#top" aria-label="Наверх">↑</a>
+<dialog class="modal" id="quick-order" aria-labelledby="modal-title"><div class="modal-box"><button class="modal-close" type="button" data-modal-close aria-label="Закрыть окно">×</button><h2 class="modal-title" id="modal-title">Быстрая заявка</h2><p>Оставьте контакты — свяжемся в течение рабочего дня.</p><form class="form modal-form" action="#" method="post">
+<input type="hidden" id="modal-selected-product" name="selected-product">
+<div class="form-grid">
+<div class="form-field"><label class="form-label" for="modal-name">Имя *</label><input class="form-input" type="text" id="modal-name" name="name" required minlength="2" autocomplete="name"></div>
+<div class="form-field"><label class="form-label" for="modal-email">E-mail *</label><input class="form-input" type="email" id="modal-email" name="email" required autocomplete="email" placeholder="you@example.com"></div>
+<div class="form-field"><label class="form-label" for="modal-phone">Телефон *</label><input class="form-input" type="tel" id="modal-phone" name="phone" required autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" title="Формат: +7 (900) 000-00-00"></div>
+<div class="form-field"><label class="form-label" for="modal-date">Желаемая дата</label><input class="form-input" type="date" id="modal-date" name="date" ></div>
+<div class="form-field"><label class="form-label" for="modal-topic">Тема заявки / товар *</label><select class="form-input" id="modal-topic" name="topic" required><option value="">Выберите…</option><option>Эфиопия Иргачеффе</option><option>Колумбия Супремо</option><option>Кения АА</option><option>Кофемашина Brewo One</option><option>Воронка V60 керамика</option><option>Ручная кофемолка Hario</option><option>Другой вопрос</option></select></div>
+</div>
+<div class="form-field"><label class="form-label" for="modal-comment">Комментарий</label><textarea class="form-input" id="modal-comment" name="comment" rows="4"></textarea></div>
+<div class="form-check"><input type="checkbox" id="modal-agree" name="agree" required><label for="modal-agree">Согласен на обработку персональных данных *</label></div>
+<div class="form-actions"><button class="button" type="submit">Отправить заявку</button><button class="button button-ghost" type="reset">Очистить</button></div>
+</form></div></dialog>
+<script src="js/main.js"></script>
+</body>
+</html>
