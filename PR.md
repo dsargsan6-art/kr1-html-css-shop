@@ -1,15 +1,18 @@
-# Pull Request — практика №2
+# Pull Request — практика №3
 
-**Ветка:** `feature/html-css-start-page`
+**Ветка:** `feature/form-modal-validation`
 
-**Коммит:** `feat: add semantic HTML structure and base CSS styles`
+**Коммит:** `feat: add order form modal and validation`
 
-**Заголовок PR:** Add semantic HTML structure and base CSS styles
+**Заголовок PR:** Add order form modal and validation
 
 **Описание PR:**
 
 ## Что сделано
-- Страница оформлена семантическими тегами: header, nav, main, section, article, aside, footer.
-- Подключён внешний файл стилей css/style.css.
-- Добавлены базовые стили и изображения.
-- В README добавлена постановка контрольной работы №1.
+- Добавлена форма заявки: имя, e-mail, телефон, дата, тема, комментарий, согласие.
+- Добавлено модальное окно <dialog>, открывается кнопкой «Заказать».
+- Добавлен js/main.js: открытие и закрытие окна, подстановка товара, проверка полей.
+- После успешной отправки показывается сообщение.
+
+## Как проверить
+- Нажать «Заказать», проверить пустые поля, неверный e-mail и телефон, затем отправить корректные данные.
