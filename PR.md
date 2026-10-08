@@ -1,15 +1,21 @@
-# Pull Request — практика №5
+# Pull Request — практика №6
 
-**Ветка:** `feature/multi-page-navigation`
+**Ветка:** `feature/flex-grid-navigation`
 
-**Коммит:** `feat: add multi-page structure navigation and anchors`
+**Коммит:** `feat: add flex navigation and grid catalog layout`
 
-**Заголовок PR:** Add multi-page structure navigation and anchors
+**Заголовок PR:** Add flex navigation and grid catalog layout
 
 **Описание PR:**
 
 ## Что сделано
-- Добавлены страницы catalog.html, contacts.html, product.html, order.html.
-- Единая навигация на всех страницах.
-- Добавлены якорные ссылки и хлебные крошки.
-- У страниц уникальные title и meta description.
+- Навигационное меню оформлено через Flexbox.
+- Карточки товаров выстроены через CSS Grid.
+- На странице каталога добавлен блок фильтров.
+- Страница каталога организована через CSS Grid.
+- Карточки товаров доработаны через Flexbox.
+- Обновлён README.
+
+## Как проверить
+- Открыть index.html, проверить меню и сетку популярных товаров.
+- Открыть catalog.html, проверить расположение фильтров и товаров.

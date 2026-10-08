@@ -27,7 +27,7 @@ main{max-width:1100px;margin:0 auto;padding:var(--space-lg) var(--space-md) var(
 .site-header{position:sticky;top:0;z-index:100;background:var(--color-surface);border-bottom:1px solid var(--color-border)}
 .site-header-inner{max-width:1100px;margin:0 auto;min-height:var(--header-h);padding:0 var(--space-md);display:flex;align-items:center;justify-content:space-between;gap:var(--space-md);flex-wrap:wrap}
 .site-header-logo{font-family:var(--font-head);font-size:1.4rem;font-weight:700;text-decoration:none;color:var(--color-primary)}
-.site-nav-list{display:flex;gap:var(--space-sm);list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.site-nav-list{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:var(--space-md);padding:0;margin:0;list-style:none}
 .site-nav-link{display:block;padding:8px 12px;border-radius:var(--radius-sm);text-decoration:none;color:var(--color-text)}
 .site-nav-link:hover{background:var(--color-bg);color:var(--color-primary)}
 .site-nav-link-active{background:var(--color-primary);color:#fff}
@@ -140,3 +140,10 @@ button:disabled,.button-disabled{opacity:.6;cursor:not-allowed}
 /* ===== Состояния интерфейса (ПЗ 4) ===== */
 .site-footer a:focus-visible{outline:2px solid var(--color-accent);outline-offset:3px}
 .form-input:invalid:not(:placeholder-shown){border-color:var(--color-danger)}
+
+/* ===== Форма фильтров (ПЗ 6) ===== */
+.filters-form{display:grid;gap:var(--space-md)}
+.filters-form fieldset{margin:0;padding:var(--space-md);border:1px solid var(--color-border);border-radius:var(--radius-sm)}
+.filters-form legend{font-weight:700}
+.filters-form label{display:block;margin-bottom:var(--space-sm)}
+.filters-form input[type="number"]{width:100%;padding:8px 10px;border:1px solid var(--color-border);border-radius:var(--radius-sm);font:inherit}
